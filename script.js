@@ -123,7 +123,7 @@ export function aufgabe06(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const asciiCode = currentElement.charCodeAt(0)
-    if (asciiCode >= 33 && asciiCode <= 63) {
+    if (ascbiiCode >= 33 && asciiCode <= 63) {
       count = count + 1
     }
   }
@@ -134,3 +134,5 @@ export function aufgabe06(args) {
   }
 }
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
+
+export function aufgabe07(args) {}
