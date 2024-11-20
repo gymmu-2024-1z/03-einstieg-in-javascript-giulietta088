@@ -156,3 +156,8 @@ export function aufgabe07(args) {
   return false
 }
 linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
+
+export function aufgabe08(args) {
+  const input = args
+}
+linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
