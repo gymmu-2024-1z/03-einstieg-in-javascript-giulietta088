@@ -123,7 +123,7 @@ export function aufgabe06(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const asciiCode = currentElement.charCodeAt(0)
-    if (ascbiiCode >= 33 && asciiCode <= 63) {
+    if (asciiCode >= 33 && asciiCode <= 63) {
       count = count + 1
     }
   }
@@ -135,4 +135,24 @@ export function aufgabe06(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
 
-export function aufgabe07(args) {}
+export function aufgabe07(args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Prüfe ob das current element ein u ist
+    if (currentElement === "u") {
+      const nextElement = input[i + 1]
+      // Prüfe ob das next element ein n ist
+      if (nextElement === "n") {
+        const nextNextElement = input[i + 2]
+        // Prüfe ob das next next element ein d ist
+        if (nextNextElement === "d") {
+          return true
+        }
+      }
+    }
+  }
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
