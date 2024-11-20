@@ -29,8 +29,13 @@ export function aufgabe01(args) {
     // damit wir nicht so viele Klammern schreiben müssen.
     const currentElement = input[i]
 
-    // Hier wird das aktuelle Zeichen ans Ende der Resultat-Liste angehängt.
-    result.push(currentElement)
+    // Wenn das aktuelle Zeichen ein 'e' ist, wird es aus dem Text entfernt.
+    if (currentElement === "e") {
+      // ingorieren wir das Zeichen, und entfernen es aus dem Text.
+    } else {
+      // Wenn das aktuelle Zeichen kein 'e' ist, wird es dem Text angehängt.
+      result.push(currentElement)
+    }
   }
 
   // Hier geben wir das Resultat zurück, und machen einen Text daraus.
@@ -38,3 +43,94 @@ export function aufgabe01(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe01]", aufgabe01)
+
+export function aufgabe02(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wandle das aktuelle zeichen in einen Grossbuchstaben um, und hänge es an
+    // das Resultat an.
+    result.push(currentElement.toUpperCase())
+  }
+
+  // Gebe das Resultat aus
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
+
+export function aufgabe03(args) {
+  const input = args
+  const result = []
+  // erstelle eine Variable um alle e zu zählen
+  let eCount = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      eCount = eCount + 1
+    }
+  }
+  return eCount
+}
+linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
+
+export function aufgabe04(args) {
+  const input = args
+  const result = []
+  let wordCount = 0
+
+  //Erstelle eine Variable um die Anzahl der Wörter zu zählen
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Wenn das aktuelle Zeichen ein Leerzeichen ist, dann erhöhe die Anzahl der Wörter
+    if (currentElement === " ") {
+      wordCount = wordCount + 1
+    }
+  }
+  //gebe die Anzahl der Wörter zurück
+  return wordCount + 1
+}
+linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
+
+export function aufgabe05(args) {
+  const input = args
+  const result = []
+  let count = 0
+  //Erstelle eine Variable um alle  Grossbuchstaben zu zählen
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //erstelle eine Variable die den ascii code von curent element speichert
+    const asciiCode = currentElement.charCodeAt(0)
+    // prüfe ob ascii code zwischen 65 und 90 liegt
+    if (asciiCode >= 65 && asciiCode <= 90) {
+      count = count + 1
+    }
+  }
+  //wenn count grösser als Null ist geben sie wahr zurück sonst falsch
+  if (count > 0) {
+    return true
+  } else {
+    return false
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+
+export function aufgabe06(args) {
+  const input = args
+  const result = []
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const asciiCode = currentElement.charCodeAt(0)
+    if (asciiCode >= 33 && asciiCode <= 63) {
+      count = count + 1
+    }
+  }
+  if (count > 1) {
+    return true
+  } else {
+    return false
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
