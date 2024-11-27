@@ -185,3 +185,20 @@ export function aufgabe09(args) {
   }
 }
 linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
+
+export function aufgabe11(args) {
+  const input = args
+  // Prüfe ob die Länge der Zeichenfolge 1 ist
+  if (input.length === 1) {
+    const asciiCode = input.charCodeAt(0)
+    // prüfe ob der ascii code zwischen 97 und 122 liegt
+    if (asciiCode >= 97 && asciiCode <= 122) {
+      return asciiCode
+    } else {
+      return null
+    }
+  } else {
+    return null
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
