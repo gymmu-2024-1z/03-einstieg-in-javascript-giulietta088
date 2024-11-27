@@ -159,5 +159,18 @@ linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
 
 export function aufgabe08(args) {
   const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    // Vergleiche ob das aktuelle Zeichen ein 'e' ist, wenn das der Fall ist, dann hänge eine 3 an
+    if (currentElement === "e") {
+      result.push("3")
+    } else {
+      result.push(currentElement)
+    }
+  }
+  return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
