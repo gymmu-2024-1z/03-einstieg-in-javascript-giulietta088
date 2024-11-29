@@ -211,6 +211,14 @@ export function aufgabe12(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 
+export function aufgabe13(args) {
+  const input = args
+  // Suche das letzte e im Text und gebe die Position an.
+  const position = input.lastIndexOf("e")
+  return position
+}
+linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
+
 // Aufgabe 29 (eigene Aufgabe)
 export function aufgabe29(args) {}
 linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
