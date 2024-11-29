@@ -219,6 +219,14 @@ export function aufgabe13(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
 
+export function aufgabe14(args) {
+  const input = args
+  // Suche das dritte e im Text und gebe die Position an.
+  const position = input.thirdindexOf("e")
+  return position
+}
+linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
+
 // Aufgabe 29 (eigene Aufgabe)
 export function aufgabe29(args) {}
 linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
