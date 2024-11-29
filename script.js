@@ -1,3 +1,4 @@
+import { positionToOffset } from "vitest/utils.js"
 import { linkupExerciseHandler } from "./utils"
 
 /**
@@ -206,15 +207,11 @@ linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
 export function aufgabe12(args) {
   const input = args
   // Suche das erste e im Text und gebe die Position an.
-  for (let i = 0; i < input.length; i++) {
-    const firstElement = input[i]
-  }
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    if (currentElement === firstElement) {
-      result.push(currentElement)
-    }
+  if (input.includes("e")) {
+    return positionToOffset(input, "e")
+  } else {
+    return null
   }
 }
-return result
+
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
