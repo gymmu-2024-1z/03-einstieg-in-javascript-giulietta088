@@ -210,3 +210,7 @@ export function aufgabe12(args) {
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
+
+// Aufgabe 29 (eigene Aufgabe)
+export function aufgabe29(args) {}
+linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
