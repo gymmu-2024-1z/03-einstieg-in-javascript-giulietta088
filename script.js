@@ -239,6 +239,16 @@ export function aufgabe14(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
 
+export function aufgabe15(args) {
+  const input = args
+  //lese das Wort bis zu dem ersten Leerzeichen
+  const word = input.substring(0, input.indexOf(" "))
+  // Substring= extrahiere die Zeichen zwischen den  zwei Indizes und gebe die Teilzeichenfolge wieder zurück
+  // indexOf= suche das erste Leerzeichen im Text
+  return word
+}
+linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
+
 // Aufgabe 29 (eigene Aufgabe)
 export function aufgabe29(args) {}
 linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
