@@ -220,9 +220,21 @@ export function aufgabe13(args) {
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
 
 export function aufgabe14(args) {
+  // suche die Position de dritten e im Text.
   const input = args
-  // Suche das dritte e im Text und gebe die Position an.
-  const position = input.thirdindexOf("e")
+  let position = -1
+  let countE = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      countE = countE + 1
+      if (countE === 3) {
+        position = i
+      }
+    }
+  }
+
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
