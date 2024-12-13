@@ -52,7 +52,7 @@ export function aufgabe02(args) {
     const currentElement = input[i]
     // Wandle das aktuelle zeichen in einen Grossbuchstaben um, und hänge es an
     // das Resultat an.
-    result.push(currentElement.toUpperCase())
+    result.push(currentElement.toUpperCase()) // toUpperCase= macht das aktuelle Zeichen in einen Grossbuchstaben
   }
 
   // Gebe das Resultat aus
@@ -122,7 +122,7 @@ export function aufgabe06(args) {
   let count = 0
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    const asciiCode = currentElement.charCodeAt(0)
+    const asciiCode = currentElement.charCodeAt(0) // charCodeAt= gib den ascii code eines zeichens wieder
     if (asciiCode >= 33 && asciiCode <= 63) {
       count = count + 1
     }
@@ -171,8 +171,7 @@ export function aufgabe08(args) {
       result.push(currentElement)
     }
   }
-  return result.join("")
-}
+  return result.join("") // join= macht aus einem array einen string}
 linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
 
 export function aufgabe09(args) {
@@ -190,7 +189,7 @@ export function aufgabe11(args) {
   const input = args
   // Prüfe ob die Länge der Zeichenfolge 1 ist
   if (input.length === 1) {
-    const asciiCode = input.charCodeAt(0)
+    const asciiCode = input.charCodeAt(0) // charCodeAt= gib den ascii code eines zeichens wieder
     // prüfe ob der ascii code zwischen 97 und 122 liegt
     if (asciiCode >= 97 && asciiCode <= 122) {
       return asciiCode
@@ -206,7 +205,7 @@ linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
 export function aufgabe12(args) {
   const input = args
   // Suche das erste e im Text und gebe die Position an.
-  const position = input.indexOf("e")
+  const position = input.indexOf("e") // indexOf= suche bis zum ersten Lehrzeichen im Text
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
@@ -214,7 +213,7 @@ linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 export function aufgabe13(args) {
   const input = args
   // Suche das letzte e im Text und gebe die Position an.
-  const position = input.lastIndexOf("e")
+  const position = input.lastIndexOf("e") // lastIndexOf= suche bis zum letzten Lehrzeichen im Text
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
@@ -248,6 +247,8 @@ export function aufgabe15(args) {
   return word
 }
 linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
+
+export function aufgabe16(args) {
 
 // Aufgabe 29 (eigene Aufgabe)
 export function aufgabe29(args) {}
