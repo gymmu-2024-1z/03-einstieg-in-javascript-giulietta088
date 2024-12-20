@@ -272,3 +272,10 @@ export function aufgabe22(args) {
   //ersetze alle Zeichen mit einem _ bis zum ersten k
 }
 linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+
+export function aufgabe29(args) {
+  const input = args
+  // ersetze alle t mit einem $
+  return input.replace("t", "r") // replace= ersetzt alle genannten Zeichen mit dem gewählten Zeichen.
+}
+linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
