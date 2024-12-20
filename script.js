@@ -190,7 +190,7 @@ export function aufgabe11(args) {
   const input = args
   // Prüfe ob die Länge der Zeichenfolge 1 ist
   if (input.length === 1) {
-    const asciiCode = input.charCodeAt(0) // charCodeAt= gib den ascii code eines zeichens wieder
+    const asciiCode = input.charCodeAt(0) // charCodeAt= gibt den ascii code eines zeichens wieder
     // prüfe ob der ascii code zwischen 97 und 122 liegt
     if (asciiCode >= 97 && asciiCode <= 122) {
       return asciiCode
@@ -206,7 +206,7 @@ linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
 export function aufgabe12(args) {
   const input = args
   // Suche das erste e im Text und gebe die Position an.
-  const position = input.indexOf("e") // indexOf= suche bis zum ersten Lehrzeichen im Text
+  const position = input.indexOf("e") // indexOf= sucht bis zum ersten Lehrzeichen im Text
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
@@ -214,7 +214,7 @@ linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 export function aufgabe13(args) {
   const input = args
   // Suche das letzte e im Text und gebe die Position an.
-  const position = input.lastIndexOf("e") // lastIndexOf= suche bis zum letzten Lehrzeichen im Text
+  const position = input.lastIndexOf("e") // lastIndexOf= sucht bis zum letzten Lehrzeichen im Text
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
@@ -243,14 +243,27 @@ export function aufgabe15(args) {
   const input = args
   //lese das Wort bis zu dem ersten Leerzeichen
   const word = input.substring(0, input.indexOf(" "))
-  // Substring= extrahiere die Zeichen zwischen den  zwei Indizes und gebe die Teilzeichenfolge wieder zurück
-  // indexOf= suche das erste Leerzeichen im Text
+  // Substring= extrahiert die Zeichen zwischen den  zwei Indizes und gibt die Teilzeichenfolge wieder zurück
+  // indexOf= sucht das erste Leerzeichen im Text
   return word
 }
 linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
 
-export function aufgabe16(args) {
+export function aufgabe20(args) {
   const input = args
-  // suche das erste dollar zeichen im Text und gebe die Position an.
+  // Prüfe ob nach jedem . ein Leerschlag kommt
+  const position = input.indexOf(".") // indexOf= sucht das erste Lehrzeichen im Text
+  if (input[position + 1] === " ") {
+    return true
+  } else {
+    return false
+  }
 }
-linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
+linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
+
+export function aufgabe21(args) {
+  // Kehre die Eingabe um und gebe das Ergebnis wieder
+  const input = args
+  return input.split("").reverse().join("") // reverse= kehrt die Eingabe um   // join= macht aus einem array einen string
+}
+linkupExerciseHandler("[data-click=aufgabe21]", aufgabe21)
