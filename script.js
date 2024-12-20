@@ -267,3 +267,8 @@ export function aufgabe21(args) {
   return input.split("").reverse().join("") // reverse= kehrt die Eingabe um   // join= macht aus einem array einen string
 }
 linkupExerciseHandler("[data-click=aufgabe21]", aufgabe21)
+
+export function aufgabe22(args) {
+  //ersetze alle Zeichen mit einem _ bis zum ersten k
+}
+linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
