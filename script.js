@@ -286,3 +286,10 @@ export function aufgabe30(args) {
   return input.substring(0, input.indexOf("S")) // indexOf= sucht das erste Lehrzeichen (Großbuchstaben) im Text
 }
 linkupExerciseHandler("[data-click=aufgabe30]", aufgabe30)
+
+export function aufgabe31(args) {
+  const input = args
+  // ersetze alle n mit einem $
+  return input.replace("n", "$") // replace= ersetzt alle genannten Zeichen mit dem gewählten Zeichen.
+}
+linkupExerciseHandler("[data-click=aufgabe31]", aufgabe31)

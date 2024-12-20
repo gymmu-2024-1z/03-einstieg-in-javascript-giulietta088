@@ -155,6 +155,10 @@ Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
 
 Ersetzen sie alle ,,t'' mit einem r.
 
-## Aufgabe 30 (eigen Aufgabe)
+## Aufgabe 30 (eigene Aufgabe)
 
 Lesen sie die Eingabe bis ein grosses S kommt.
+
+## Aufgabe 31 (eigene Aufgabe)
+
+Ersetze das erste n mit einem $.
