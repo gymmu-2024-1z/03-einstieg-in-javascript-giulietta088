@@ -279,3 +279,10 @@ export function aufgabe29(args) {
   return input.replace("t", "r") // replace= ersetzt alle genannten Zeichen mit dem gewählten Zeichen.
 }
 linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
+
+export function aufgabe30(args) {
+  const input = args
+  // Lese die Eingabe bis ein grosses S kommt
+  return input.substring(0, input.indexOf("S")) // indexOf= sucht das erste Lehrzeichen (Großbuchstaben) im Text
+}
+linkupExerciseHandler("[data-click=aufgabe30]", aufgabe30)

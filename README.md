@@ -154,3 +154,7 @@ Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
 ## Aufgabe 29 (eigene Aufgabe)
 
 Ersetzen sie alle ,,t'' mit einem r.
+
+## Aufgabe 30 (eigen Aufgabe)
+
+Lesen sie die Eingabe bis ein grosses S kommt.
