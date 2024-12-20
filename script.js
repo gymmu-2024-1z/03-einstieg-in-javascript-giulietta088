@@ -171,7 +171,8 @@ export function aufgabe08(args) {
       result.push(currentElement)
     }
   }
-  return result.join("") // join= macht aus einem array einen string}
+  return result.join("") // join= macht aus einem array einen string
+}
 linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
 
 export function aufgabe09(args) {
@@ -249,7 +250,7 @@ export function aufgabe15(args) {
 linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
 
 export function aufgabe16(args) {
-
-// Aufgabe 29 (eigene Aufgabe)
-export function aufgabe29(args) {}
-linkupExerciseHandler("[data-click=aufgabe29]", aufgabe29)
+  const input = args
+  // suche das erste dollar zeichen im Text und gebe die Position an.
+}
+linkupExerciseHandler("[data-click=aufgabe16]", aufgabe16)
